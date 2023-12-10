@@ -7,7 +7,7 @@ export default class OpenAIClient implements AIClient
     private openai: OpenAI
 
     constructor() {
-        this.openai = new OpenAI({apiKey:'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'});
+        this.openai = new OpenAI({apiKey:''});
     }
 
     public async completion(messages: {role: 'user' | 'system' | 'assistant', content:string}[]): Promise<{role: 'assistant', content: string|null}> {
